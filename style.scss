@@ -1,0 +1,788 @@
+@import "reset";
+@import "mixin";
+@import "variables";
+
+#header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  background: transparent;
+  padding:  40px 0;
+  .header {
+    @include between();
+    &--icon {
+      @include flex();
+      a {
+        font-weight: 700;
+        font-size: 24px;
+        color: $wh;
+        padding-left: 10px;
+      }
+    }
+    &--nav {
+      @include flex();
+      a {
+        padding-left: 40px;
+        font-weight: 400;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.8);
+
+      }
+    }
+    button {
+      width: 112px;
+      height: 39px  ;
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 3px;
+      font-weight: 500;
+      font-size: 14px;
+      color: $wh;
+    }
+  }
+}
+#hero {
+  .hero {
+    position: relative;
+    padding-top: 50px;
+    &--title {
+      @include center();
+      text-align: center;
+      h4 {
+        padding-bottom: 20px;
+        font-weight: 600;
+        font-size: 16px;
+        letter-spacing: 0.1em;
+        color: $gr;
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 54px;
+        color: $wh;
+      }
+      p {
+        padding: 20px 0;
+        width: 539px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 32px;
+        color: $pr;
+      }
+      &__btns {
+        @include flex();
+        &--left {
+          button {
+            width: 202px;
+            height: 52px;
+            background: #6016FC;
+            border-radius: 3px;
+            font-weight: 600;
+            font-size: 16px;
+            color: $wh;
+          }
+        }
+        &--right {
+          button {
+            margin-left:30px;
+            width: 202px;
+            height: 52px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 3px;
+            font-weight: 600;
+            font-size: 16px;
+            color: $wh;
+          }
+        }
+      }
+    }
+    &--glav {
+      padding-top: 100px;
+      @include between();
+      &__card {
+        padding: 35px 0 0 40px;
+        width: 328px;
+        height: 256px;
+        background: $bg;
+        &--icon {
+          width: 50px;
+          height: 50px;
+          background: $bg;
+          @include center();
+          h6 {
+
+            font-size: 28px;
+            color: $wh;
+          }
+        }
+        h3 {
+          padding: 20px 0;
+          font-weight: 700;
+          font-size: 18px;
+          color: $wh;
+        }
+        p {
+          width: 239px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 32px;
+          color: $pr;
+        }
+      }
+    }
+    &--logos {
+      margin-top: 60px;
+      padding: 20px 0;
+      h1 {
+        padding: 0 30px;
+      }
+      border-bottom: 2px solid $bg;
+      border-top: 2px solid $bg;
+      @include centr();
+      &__text1 {
+        h1 {
+          font-size: 40px;
+          font-weight: 999;
+          color: $pr;
+        }
+      }
+      &__text2 {
+        h1 {
+          font-size: 40px;
+          font-weight: 680;
+          color: $pr;
+        }
+      }
+      &__text3 {
+        h1 {
+          font-size: 40px;
+          font-weight: 600;
+          color: $pr;
+        }
+      }
+      &__text5 {
+        h1 {
+          font-size: 30px;
+          font-weight: 700;
+          color: $pr;
+        }
+      }
+      &__text4 {
+        @include flex();
+        &--bg {
+          &__fg {
+
+            @include flex();
+            &--left {
+              margin: 1px;
+              width: 12px;
+              height: 12px;
+              background: $pr;
+            }
+            &--right {
+              width: 12px;
+              height: 12px;
+              background: $pr;
+            }
+          }
+        }
+        h1 {
+          padding-left: 5px;
+          font-size: 26px;
+          font-weight: 600;
+          color: $pr;
+        }
+      }
+    }
+  }
+}
+#well {
+  .well {
+    @include between();
+    padding: 180px 0;
+    &--fg {
+      @include flex();
+      &__left {
+        &--top {
+          //margin-right: 40px;
+          opacity: 0.4;
+          padding: 25px 0 0 25px;
+          width: 173px;
+          height: 169px;
+          background: $bg;
+          border-radius: 3px;
+          margin-bottom: 70px;
+          &__f1 {
+            width: 66.12px;
+            height: 12.09px;
+            background: $bg;
+            opacity: 0.8;
+            border-radius: 3px;
+          }
+          &__glav {
+            padding-top: 15px ;
+            @include flex();
+            &--f2 {
+              width: 21.56px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f3 {
+              margin: 0 20px;
+              width: 48.51px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f4 {
+              width: 36.19px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+          }
+          &__glav2 {
+            padding-top: 15px ;
+            @include flex();
+            &--f2 {
+              margin-right: 20px;
+              width: 21.56px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f3 {
+
+              width: 54.83px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f4 {
+              margin-left: 15px;
+              width: 36.19px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+          }
+          &__glav3 {
+            padding-top: 15px ;
+            @include flex();
+            &--f2 {
+              margin-right: 20px;
+              width: 21.56px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f3 {
+
+              width: 35.48px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f4 {
+              margin-left: 20px;
+              width: 49.19px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+          }
+          &__glav5 {
+            padding-top: 15px ;
+            @include flex();
+            &--f2 {
+              margin-right: 20px;
+              width: 21.56px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f3 {
+
+              width: 54.83px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f4 {
+              margin-left: 15px;
+              width: 36.19px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+          }
+          &__glav6 {
+            padding-top: 15px ;
+            @include flex();
+            &--f2 {
+              width: 21.56px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f3 {
+              margin: 0 20px;
+              width: 48.51px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f4 {
+              width: 36.19px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+          }
+        }
+        &--btn {
+          margin-left: 26px;
+          opacity: 0.4;
+          padding: 25px 0 0 25px;
+          width: 173px;
+          height: 145px;
+          background: $bg;
+          border-radius: 3px;
+          //margin-bottom: 40px;
+          &__f1 {
+            width: 89.5px;
+            height: 12.09px;
+            background: $bg;
+            opacity: 0.8;
+            border-radius: 3px;
+          }
+          &__glav {
+            padding-top: 15px ;
+            @include flex();
+            &--f2 {
+              width: 21.56px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f3 {
+              margin: 0 20px;
+              width: 48.51px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f4 {
+              width: 36.19px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+          }
+          &__glav2 {
+            padding-top: 15px ;
+            @include flex();
+            &--f2 {
+              margin-right: 20px;
+              width: 21.56px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f3 {
+
+              width: 54.83px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f4 {
+              margin-left: 15px;
+              width: 36.19px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+          }
+          &__glav3 {
+            padding-top: 15px ;
+            @include flex();
+            &--f2 {
+              margin-right: 20px;
+              width: 21.56px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f3 {
+
+              width: 35.48px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f4 {
+              margin-left: 20px;
+              width: 49.19px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+          }
+          &__glav5 {
+            padding-top: 15px ;
+            @include flex();
+            &--f2 {
+              margin-right: 20px;
+              width: 21.56px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f3 {
+
+              width: 54.83px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f4 {
+              margin-left: 15px;
+              width: 36.19px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+          }
+        }
+      }
+      &__right {
+        position: relative;
+        padding: 110px 0 0 50px;
+        &--cr {
+          position: relative;
+          right: 85px;
+          top: 8px;
+          opacity: 0.2;
+          z-index: -1;
+          width: 143.99px;
+          height: 27px;
+          border-top: 3px solid $bg;
+          border-right: 3px solid $bg;
+          border-radius: 20px;
+          &__bg {
+            position: relative;
+            bottom: 10px;
+            opacity: 0.7;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: $bg;
+            z-index: 1;
+            @include centr();
+            &--bl {
+              width: 10px;
+              height: 10px;
+              opacity: 1.1;
+              z-index: 99;
+              border-radius: 50%;
+              background: #6016FC;
+            }
+          }
+        }
+        &--top {
+          opacity: 0.4;
+          padding: 25px 0 0 25px;
+          width: 173px;
+          height: 226.57px;
+          background: $bg;
+          border-radius: 3px;
+          margin-bottom: 70px;
+          &__f1 {
+            width: 45.15px;
+            height: 12.09px;
+            background: $bg;
+            opacity: 0.8;
+            border-radius: 3px;
+          }
+          &__glav {
+            padding-top: 15px ;
+            @include flex();
+            &--f2 {
+              width: 21.56px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f3 {
+              margin: 0 20px;
+              width: 48.51px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f4 {
+              width: 36.19px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+          }
+          &__glav2 {
+            padding-top: 15px ;
+            @include flex();
+            &--f2 {
+              margin-right: 20px;
+              width: 21.56px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f3 {
+
+              width: 54.83px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f4 {
+              margin-left: 15px;
+              width: 36.19px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+          }
+          &__glav3 {
+            padding-top: 15px ;
+            @include flex();
+            &--f2 {
+              margin-right: 20px;
+              width: 21.56px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f3 {
+
+              width: 48.51px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f4 {
+              margin-left: 20px;
+              width: 36.19px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+          }
+          &__glav5 {
+            padding-top: 15px ;
+            @include flex();
+            &--f2 {
+              margin-right: 20px;
+              width: 21.56px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f3 {
+
+              width: 54.83px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f4 {
+              margin-left: 20px;
+              width: 29.83px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+          }
+          &__glav6 {
+            padding-top: 15px ;
+            @include flex();
+            &--f2 {
+              width: 21.56px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f3 {
+              margin: 0 20px;
+              width: 35.48px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f4 {
+              width: 49.19px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+          }
+          &__glav7 {
+            padding-top: 15px ;
+            @include flex();
+            &--f2 {
+              margin-right: 20px;
+              width: 21.56px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f3 {
+
+              width: 54.83px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+            &--f4 {
+              margin-left: 20px;
+              width: 29.83px;
+              height: 12.09px;
+              background: $bg;
+              opacity: 0.8;
+              border-radius: 3px;
+            }
+          }
+
+        }
+        img {
+          position: absolute;
+          bottom: 52px;
+          right: 200px;
+        }
+      }
+    }
+   &--title {
+      h3 {
+        padding-bottom: 10px;
+        font-weight: 600;
+        font-size: 16px;
+        letter-spacing: 0.1em;
+        color: $gr;
+      }
+     h1 {
+       width: 476px;
+       font-weight: 700;
+       font-size: 30px;
+       line-height: 48px;
+       color: $wh;
+     }
+     p {
+       padding-top: 25px;
+       width: 502px;
+       font-weight: 500;
+       font-size: 16px;
+       line-height: 32px;
+       color: $pr;
+     }
+   }
+  }
+}
+
+
+#our {
+  .our {
+    &--title {
+    h3 {
+      padding-bottom: 20px;
+      font-weight: 600;
+      font-size: 16px;
+      letter-spacing: 0.1em;
+      color: $gr;
+    }
+      h1 {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 48px;
+        color: $wh;
+      }
+      p {
+        padding: 20px 0;
+        width: 415px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 32px;
+        color:  $pr;
+      }
+      button {
+        width: 196px;
+        height: 52px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 3px;
+        font-weight: 600;
+        font-size: 16px;
+        color: $wh;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
